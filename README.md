@@ -1,4 +1,4 @@
-# Project Name
+# RIDDHIKACHATTERJEE-GM-ASSIGNMENT
 
 ## Overview
 This project uses Playwright for UI and API tests for [DemoQA.com](https://demoqa.com/) . The project follows a Page Object Model (POM) approach to maintain test readability and reusability.
