@@ -104,7 +104,7 @@ npx playwright show-report
 ```
 
 ## Test report generated after running all tests
-![Screenshot of the application](images/playwright-test-report.png)
+You can check screenshot of the generated report from my last test run in the file named test-report.
 
 ## Points to note
 1) Page Object Model: I have used Page Object classes in the pages directory to encapsulate interactions with UI components.
