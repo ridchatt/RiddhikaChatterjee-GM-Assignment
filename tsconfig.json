@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./"
+  },
+  "include": ["e2e/**/*.ts", "config/**/*.ts", "utils/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

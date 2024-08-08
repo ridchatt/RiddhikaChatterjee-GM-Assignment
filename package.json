@@ -1,0 +1,27 @@
+{
+  "name": "riddhikachatterjee-gm-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "playwright test",
+    "test:ui": "playwright test e2e/ui/tests",
+    "test:api": "playwright test e2e/api"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "uuid": "^10.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "playwright": "^1.45.3",
+    "typescript": "^5.5.4"
+  }
+}
