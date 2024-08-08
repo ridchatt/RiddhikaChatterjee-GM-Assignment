@@ -5,6 +5,7 @@ import { test, expect } from "../../../base/pom-fixture";
 const testData = getTestData();
 
 test.describe("Table Tests", () => {
+  // Navigate to the web tables page before each test
   test.beforeEach(async ({ page, tablePage }) => {
     await page.goto("/elements");
     await page.click("text=Web Tables");

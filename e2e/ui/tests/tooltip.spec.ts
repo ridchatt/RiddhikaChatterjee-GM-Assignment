@@ -2,6 +2,7 @@ import { expect, test } from "../../../base/pom-fixture";
 
 test.describe("Tooltip Tests", () => {
   test.beforeEach(async ({ page }) => {
+    // Navigate to the tooltips page before each test
     await page.goto("/tool-tips");
   });
 

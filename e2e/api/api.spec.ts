@@ -15,6 +15,7 @@ test.describe("User and Book API Tests", () => {
     const apiRequestContext = await apiUtils.createRequestContext();
 
     try {
+      // Create a new user and store the userId
       const userResponse = await apiUtils.createUser(
         apiRequestContext,
         randomUserName,
@@ -33,6 +34,7 @@ test.describe("User and Book API Tests", () => {
     }
 
     try {
+      // Generate a token for the newly created user
       token = await apiUtils.generateToken(
         apiRequestContext,
         randomUserName,

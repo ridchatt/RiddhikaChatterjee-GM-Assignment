@@ -1,6 +1,7 @@
 import { expect, test } from "../../../base/pom-fixture";
 
 test.describe("Broken Image Tests", () => {
+  // Navigate to the broken image page before each test
   test.beforeEach(async ({ page }) => {
     await page.goto("/broken");
   });

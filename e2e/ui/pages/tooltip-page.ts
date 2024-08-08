@@ -9,6 +9,7 @@ export class TooltipPage {
     this.tooltip = this.page.locator(".tooltip-inner");
   }
 
+   // Hover over the button and ensure the tooltip becomes visible
   async hoverOverButton() {
     await this.page.hover("#toolTipButton");
     await this.page.waitForSelector(".tooltip-inner", {

@@ -7,6 +7,7 @@ export class FormPage {
     this.page = page;
   }
 
+  // Fills out the student registration form with the provided data
   async fillStudentRegistrationForm(data: {
     firstName: string;
     lastName: string;
@@ -45,6 +46,7 @@ export class FormPage {
     await this.page.press("#react-select-4-input", "Enter");
   }
 
+  
   private async selectGender(gender: string) {
     const genderRadioButton = this.page.locator(
       `input[name="gender"][value="${gender}"]`

@@ -13,6 +13,7 @@ export class ProgressBarPage {
     await this.page.click("#startStopButton");
   }
 
+  // Waiting for the progress bar to complete (reach 100%)
   async waitForProgressBarComplete() {
     await this.progressBar.waitFor({ state: "visible", timeout: 30000 });
     await this.page.waitForFunction(

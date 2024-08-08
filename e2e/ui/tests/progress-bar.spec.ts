@@ -1,6 +1,7 @@
 import { expect, test } from "../../../base/pom-fixture";
 
 test.describe("Progress Bar Tests", () => {
+  // Navigate to the progress bar page before each test
   test.beforeEach(async ({ page }) => {
     await page.goto("/progress-bar");
   });

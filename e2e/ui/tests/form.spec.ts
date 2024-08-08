@@ -5,6 +5,7 @@ import { expect, test } from "../../../base/pom-fixture";
 const testData = getTestData();
 
 test.describe("Form Submission Tests", () => {
+  // Navigate to the form page before each test
   test.beforeEach(async ({ page }) => {
     await page.goto("/forms");
     await page.click("text=Practice Form");

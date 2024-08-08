@@ -28,6 +28,7 @@ export class TablePage {
     await this.page.click("#submit");
   }
 
+  // Retrieve text content of a row based on firstname, lastname and email
   async getRowData(firstName: string, lastName?: string, email?: string) {
     const rowLocator = this.page.locator(
       `.rt-tr-group:has(div:has-text("${firstName}"))`
@@ -47,6 +48,7 @@ export class TablePage {
     return rowText || "";
   }
 
+  // Edit a row based on firstName
   async editRow(
     firstName: string,
     data: { firstName: string; lastName: string }
@@ -60,6 +62,7 @@ export class TablePage {
     await this.page.click("#submit");
   }
 
+  // Delete a row based on firstName
   async deleteRow(firstName: string) {
     const row = this.page.locator(
       `.rt-tr-group:has-text("${firstName}") >> button[title="Delete"]`

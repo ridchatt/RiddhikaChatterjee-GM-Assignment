@@ -1,10 +1,12 @@
 import { APIRequestContext, request } from "@playwright/test";
 import { BASE_URL, API_ENDPOINTS } from "../../config/config";
 
+// Create a new API request context for making HTTP requests
 export const createRequestContext = async (): Promise<APIRequestContext> => {
   return request.newContext();
 };
 
+// Generate a random password with a mix of character types
 export function generateRandomPassword(length = 9): string {
   const upperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
@@ -35,6 +37,7 @@ export function generateRandomPassword(length = 9): string {
     .join("");
 }
 
+// Create a new user via API
 export async function createUser(
   requestContext: APIRequestContext,
   username: string,
@@ -53,6 +56,7 @@ export async function createUser(
   return response;
 }
 
+// Generate an authentication token via API
 export async function generateToken(
   requestContext: APIRequestContext,
   username: string,
@@ -71,6 +75,7 @@ export async function generateToken(
   return data.token;
 }
 
+// Add books to a user's collection via API
 export async function addBooks(
   requestContext: APIRequestContext,
   token: string,
@@ -88,6 +93,7 @@ export async function addBooks(
   });
 }
 
+// Remove a book from a user's collection via API
 export async function removeBook(
   requestContext: APIRequestContext,
   token: string,
@@ -105,6 +111,7 @@ export async function removeBook(
   });
 }
 
+// Get user details via API
 export async function getUser(
   requestContext: APIRequestContext,
   token: string,
