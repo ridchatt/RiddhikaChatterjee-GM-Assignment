@@ -49,8 +49,8 @@ RiddhikaChatterjee-GM-Assignment
 
 ## Setup
 ### Prerequisites
-Node.js (v16 or higher)
-npm (v7 or higher)
+- Node.js (v16 or higher)
+- npm (v7 or higher)
 
 ## Installation and steps to run tests
 1. Clone the repository:
