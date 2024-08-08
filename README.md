@@ -41,7 +41,6 @@ RiddhikaChatterjee-GM-Assignment
   ├── package.json
   ├── package-lock.json
   ├── playwright.config.ts
-  ├── testPath.js
   ├── tsconfig.json
   └── README.md
 
@@ -72,9 +71,10 @@ npm install
 npx playwright install
 ```
 
-## How to run tests
+## Run tests
+Please note that the UI tests are present under e2e/ui. All the API tests for Book store application are present under e2e/api.
 
-### How to run all tests
+### How to run all tests (both UI and API tests)
 
 #### headless
 ```bash
@@ -86,8 +86,8 @@ npx playwright test
 npx playwright test --headed
 ```
 
-### How to run all tests (both UI and API tests)
-For example test broken-image.spec.ts, please use name of the specific test file accordingly
+### How to run a specific test
+For example if you'd like to run broken-image.spec.ts, for any other test please use name of the specific test file accordingly.
 #### headless
 ```bash
 npx playwright test broken-image.spec.ts 
@@ -102,6 +102,9 @@ npx playwright test broken-image.spec.ts --headed
 ```bash
 npx playwright show-report
 ```
+
+## Test report generated after running all tests
+![Screenshot of the application](images/playwright-test-report.png)
 
 ## Points to note
 1) Page Object Model: I have used Page Object classes in the pages directory to encapsulate interactions with UI components.
