@@ -1,4 +1,4 @@
-# RIDDHIKACHATTERJEE-GM-ASSIGNMENT
+# RiddhikaChatterjee-GM-Assignment
 
 ## Overview
 This project uses Playwright for UI and API tests for [DemoQA.com](https://demoqa.com/) . The project follows a Page Object Model (POM) approach to maintain test readability and reusability.
@@ -6,7 +6,7 @@ This project uses Playwright for UI and API tests for [DemoQA.com](https://demoq
 ## Folder Structure
 
 ````plaintext
-RIDDHIKACHATTERJEE-GM-ASSIGNMENT
+RiddhikaChatterjee-GM-Assignment
   ├── base
   │   ├── pom-fixture.ts
   ├── config
